@@ -1,16 +1,23 @@
 $(function(){
 	switch(menu){
-		case 'about':
-			$('#products').addClass('active');
+		case 'All products':
+			//alert("ccsce");
+			$('#products a').addClass('active');
+			$('#a_'+menu).addClass('active');
 			break;
-		case 'about':
-			$('#contact').addClass('active');
+		case 'About Us':
+			$('#about a').addClass('active');
 			break;
-		case 'contact':
-			$('#contact').addClass('active');
+		case 'Get in touch with Us':
+			$('#contact a').addClass('active');
 			break;
 		default:
-			$('#home').addClass('active');
+			$('#home a').addClass('active');
 			break;
 	}
+});
+
+$('.hero__categories__all').on('click', function() {
+	$('#caret-down-cat').toggleClass("bi-caret-up bi-caret-down");
+	$('.hero__categories ul').slideToggle(400);
 });
