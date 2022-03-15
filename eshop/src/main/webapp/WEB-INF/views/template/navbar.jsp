@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light eshop-navbar">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark eshop-navbar">
 	<div class="container px-4 px-lg-5">
-		<a class="navbar-brand" href="${contextRoot}/home">eShop</a>
+		<a class="navbar-brand" href="${contextRoot}/home">
+			<img src="${images}/logo_eShop-v2.png" alt="eShop Logo" width="250" height="50"/>
+		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarTogglerDemo02"
 			aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -19,9 +21,9 @@
 					href="${contextRoot}/about">About</a></li>
 			</ul>
 			<form class="d-flex">
-				<button class="btn btn-outline-dark" type="submit">
+				<button class="btn btn-outline-light" type="submit">
 					<i class="bi-cart-fill me-1"></i> Cart <span
-						class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+						class="badge bg-primary text-white ms-1 rounded-pill">0</span>
 				</button>
 			</form>
 		</div>

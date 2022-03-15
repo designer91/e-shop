@@ -17,10 +17,6 @@
 <meta name="description" content="" />
 <meta name="author" content="Nabil Azri" />
 <title>eShop Market - ${title}</title>
-<script>
-	window.menu = '${title}';
-	window.contextRoot = '${contextRoot}';
-</script>
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="${images}/eShop.ico" />
 <!-- Bootstrap icons-->
@@ -32,38 +28,33 @@
 <link href="${css}/custom.css" rel="stylesheet" />
 <%-- <link href="${css}/dataTables.bootstrap5.css" rel="stylesheet" /> --%>
 <!-- <link href="${css}/jquery.dataTables.css" rel="stylesheet" /> -->
-<link rel="stylesheet" type="text/css"
-	href="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.css" />
 </head>
 <body class="d-flex flex-column min-vh-100">
-	<!-- Navigation-->
-	<%@ include file="./template/navbar.jsp"%>
+	<nav
+		class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark eshop-navbar">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="${contextRoot}/home"> <img
+				src="${images}/logo_eShop-v1.png" alt="eShop Logo" width="250"
+				height="50" />
+			</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
 
-	<!-- Section-->
-	<c:if test="${userClickHome==true}">
-		<%@ include file="index.jsp"%>
-	</c:if>
+	<header class="bg-primary py-5">
+		<div class="container px-4 px-lg-5 my-5">
+			<div class="text-center text-white">
+				<h1 class="display-4 fw-bolder">${errorTitle}</h1>
+				<p class="lead fw-normal text-white-50 mb-0 text-break">${errorDescription}</p>
+			</div>
+		</div>
+	</header>
 
-	<c:if test="${userClickProducts==true}">
-		<%@ include file="listOfProducts.jsp"%>
-	</c:if>
-
-	<c:if test="${userClickAbout==true}">
-		<%@ include file="about.jsp"%>
-	</c:if>
-
-	<c:if test="${userClickContact==true}">
-		<%@ include file="contact.jsp"%>
-	</c:if>
-
-	<c:if
-		test="${userClickAllProducts==true or userClickCategoryProducts==true}">
-		<%@ include file="listOfProducts.jsp"%>
-	</c:if>
-
-	<c:if test="${userClickShowProduct==true}">
-		<%@ include file="singleProduct.jsp"%>
-	</c:if>
 
 	<!-- Footer-->
 	<%@ include file="./template/footer.jsp"%>
@@ -80,15 +71,6 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
 		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 		crossorigin="anonymous"></script>
-	<!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/a92cc1dc3d.js"
-		crossorigin="anonymous"></script>
-	<!-- DataTable plugin -->
-	<script type="text/javascript"
-		src="https://cdn.datatables.net/v/bs5/dt-1.11.5/datatables.min.js"></script>
-	<!-- Core theme JS-->
-	<script src="${js}/scripts.js"></script>
-	<!-- Custom JS -->
-	<script type="text/javascript" src="${js}/custom.js"></script>
+
 </body>
 </html>

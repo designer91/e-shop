@@ -1,6 +1,7 @@
 <div class="aboutus-section">
 	<div class="container">
-		<div class="row">
+		
+		<div class="row mb-5">
 			<div class="col-md-3 col-sm-6 col-xs-12">
 				<div class="aboutus">
 					<h2 class="aboutus-title">About Us</h2>
@@ -14,55 +15,68 @@
 					<a class="aboutus-more" href="#">read more</a>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="col-md-8 col-sm-6 col-xs-12">
 				<div class="aboutus-banner">
-					<img
-						src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg"
-						alt="">
-				</div>
-			</div>
-			<div class="col-md-5 col-sm-6 col-xs-12">
-				<div class="feature">
-					<div class="feature-box">
-						<div class="clearfix">
-							<div class="iconset">
-								<i class="bi bi-alarm-fill"></i>
-							</div>
-							<div class="feature-content">
-								<h4>Work with heart</h4>
-								<p>Aenean vulputate eleifend tellus. Aenean leo ligula,
-									porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-									ante, dapibus in.</p>
-							</div>
-						</div>
-					</div>
-					<div class="feature-box">
-						<div class="clearfix">
-							<div class="iconset">
-								<i class="bi bi-alarm-fill"></i>
-							</div>
-							<div class="feature-content">
-								<h4>Reliable services</h4>
-								<p>Donec vitae sapien ut libero venenatis faucibu. Nullam
-									quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
-							</div>
-						</div>
-					</div>
-					<div class="feature-box">
-						<div class="clearfix">
-							<div class="iconset">
-								<i class="bi bi-alarm-fill"></i>
-							</div>
-							<div class="feature-content">
-								<h4>Great support</h4>
-								<p>Aenean vulputate eleifend tellus. Aenean leo ligula,
-									porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-									ante, dapibus in.</p>
-							</div>
-						</div>
-					</div>
+					<img src="${images}/aboutUs/toa-heftiba-6fTc40ncUd4-unsplash.jpg"
+						class="img-thumbnail" alt="About Us Image" width="100%"
+						height="100%">
 				</div>
 			</div>
 		</div>
+		
+		<div class="row feature">
+			
+				
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="feature-box">
+							<div class="clearfix">
+								<div class="iconset">
+									<img src="${images}/icons/001-agreement.png"
+										alt="icon agreement">
+								</div>
+								<div class="feature-content">
+									<h4>Work with heart</h4>
+									<p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+										porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+										ante, dapibus in.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="feature-box">
+							<div class="clearfix">
+								<div class="iconset">
+									<img src="${images}/icons/002-agreement-1.png"
+										alt="icon agreement">
+								</div>
+								<div class="feature-content">
+									<h4>Work with heart</h4>
+									<p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+										porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+										ante, dapibus in.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="feature-box">
+							<div class="clearfix">
+								<div class="iconset">
+									<img src="${images}/icons/003-analytic.png"
+										alt="icon agreement">
+								</div>
+								<div class="feature-content">
+									<h4>Work with heart</h4>
+									<p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+										porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+										ante, dapibus in.</p>
+								</div>
+							</div>
+						</div>
+					</div>		
+		
+		</div>	
+		
 	</div>
 </div>

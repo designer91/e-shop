@@ -12,11 +12,12 @@ Navigation
 /**/
 .aboutus-section {
     padding: 90px 0;
+    background-image: url('${images}/aboutUs/toa-heftiba-6fTc40ncUd4-unsplash.jpg');
 }
 .aboutus-title {
     font-size: 30px;
     letter-spacing: 0;
-    line-height: 32px;
+    line-height: 62px;
     margin: 0 0 39px;
     padding: 0 0 11px;
     position: relative;
@@ -24,13 +25,13 @@ Navigation
     color: #000;
 }
 .aboutus-title::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: rgb(128, 0, 255) none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
     left: 0;
     position: absolute;
-    width: 54px;
+    width: 150px;
 }
 .aboutus-text {
     color: #606060;
@@ -39,29 +40,37 @@ Navigation
     margin: 0 0 35px;
 }
 
-a:hover, a:active {
+a:hover {
     color: #ffb901;
     text-decoration: none;
     outline: 0;
 }
+.active a{
+	color: #ffb901;
+	text-decoration: none;
+    outline: 0;
+}
+
 .aboutus-more {
-    border: 1px solid #fdb801;
+    border: 1px solid rgb(128, 0, 255);
     border-radius: 25px;
-    color: #fdb801;
+    color: rgb(128, 0, 255);
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0;
     padding: 7px 20px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .feature .feature-box .iconset {
     background: #fff none repeat scroll 0 0;
+    color: #fdb801;
     float: left;
     position: relative;
     width: 18%;
 }
-.feature .feature-box .iconset::after {
+/* .feature .feature-box .iconset::after {
     background: #fdb801 none repeat scroll 0 0;
     content: "";
     height: 150%;
@@ -69,7 +78,7 @@ a:hover, a:active {
     position: absolute;
     top: 100%;
     width: 1px;
-}
+} */
 
 .feature .feature-box .feature-content h4 {
     color: #0f0f0f;
@@ -134,7 +143,7 @@ a:hover, a:active {
 	top: 46px;
 	width: 100%;
 	z-index: 9;
-	background: #ffffff;
+	/*background: #ffffff;*/
 }
 
 .hero.hero-normal .hero__search {
@@ -142,7 +151,7 @@ a:hover, a:active {
 }
 
 .hero__categories__all {
-	background: #39ad9d;
+	background: #0D6EFD;
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
@@ -186,7 +195,6 @@ a:hover, a:active {
 
 .hero__categories ul li a {
 	font-size: 16px;
-	color: #1c1c1c;
 	line-height: 39px;
 	display: block;
 	text-align: none;
@@ -372,4 +380,9 @@ a:hover, a:active {
 .customBreadcrumb > li > a,
 .hero__categories > ul > li > a {
 	text-decoration: none;
+}
+
+.dataTabImg{
+	max-width: 100px;
+	max-height: 100px;
 }

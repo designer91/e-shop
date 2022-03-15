@@ -1,9 +1,10 @@
-<header class="bg-dark py-5">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<header class="bg-primary py-5">
 	<div class="container px-4 px-lg-5 my-5">
 		<div class="text-center text-white">
-			<h1 class="display-4 fw-bolder">Shop in style</h1>
-			<p class="lead fw-normal text-white-50 mb-0">With eShop shop in
-				style</p>
+			<h1 class="display-4 fw-bolder">eShop Marketplace</h1>
+			<p class="lead fw-normal text-white-50 mb-0">Shop in style!</p>
 		</div>
 	</div>
 </header>
@@ -11,7 +12,7 @@
 	<div class="container px-4 px-lg-5 mt-5">
 		<div class="row justify-content-right">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
-				<%@ include file="template/sideBar.jsp"%>
+				<%@include file="./template/sideBar.jsp" %>
 			</div>
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 col-xxl-9">
 				<div id="carouselExampleCaptions" class="carousel slide"

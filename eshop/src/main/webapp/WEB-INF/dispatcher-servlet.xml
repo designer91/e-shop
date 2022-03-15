@@ -14,7 +14,8 @@
     http://www.springframework.org/schema/aop/spring-aop.xsd
     ">
     
-    <context:component-scan base-package="ma.eshop.controller" /> 
+    <context:component-scan base-package="ma.eshop" /> 
+    <context:component-scan base-package="ma.eshop.eshopbackend" /> 
     <context:component-scan base-package="ma.eshopbackend.daoimpl" /> 
     
     <bean id="viewResolver"
